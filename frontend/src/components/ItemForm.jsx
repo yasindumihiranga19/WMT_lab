@@ -54,15 +54,8 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
 
       <label>Image URL</label>
       <input name="imageUrl" value={formData.imageUrl} onChange={handleChange} />
-      <label>Discount (%)</label>
-      <input
-        type="number"
-        name="discount"
-        value={formData.discount}
-        onChange={handleChange}
-        min="0"
-        max="100"
-      />
+      <label >Manufacturer Name</label>
+      <input name="manufacturerName" value={formData.manufacturerName} onChange={handleChange} />
       <button className="btn primary" type="submit">{submitText}</button>
     </form>
   );
