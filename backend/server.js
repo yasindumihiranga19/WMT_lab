@@ -3,6 +3,9 @@ import dotenv from "dotenv";
 import cors from "cors";
 import mongoose from "mongoose";
 import itemRoutes from "./routes/itemRoutes.js";
+import dns from "node:dns";
+dns.setServers(["8.8.8.8", "8.8.4.4"]);
+dns.setDefaultResultOrder("ipv4first");
 
 dotenv.config();
 
